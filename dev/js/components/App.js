@@ -41,7 +41,7 @@ class App extends React.Component {
 
     return (
 	    <div>
-		    <Table cols={cols} data={data} name="table-1" clickHandler={this.handleClick} />    
+		    <Table cols={tableData.cols} data={tableData.data} name="table-1" clickHandler={this.handleClick} />    
 	      <h2>User List</h2>
 	      <UserList />
 	      <hr />
