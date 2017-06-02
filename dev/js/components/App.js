@@ -34,6 +34,11 @@ class App extends React.Component {
         { id: 2, firstName: 'Bob', lastName: 'Marley' }
     ];
 
+  	let tableData = {
+  		cols: cols,
+  		data: data,
+  	}
+
     return (
 	    <div>
 		    <Table cols={cols} data={data} name="table-1" clickHandler={this.handleClick} />    

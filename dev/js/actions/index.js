@@ -6,10 +6,10 @@ export const selectUser = (user) => {
     }
 };
 
-export const selectUser2 = (user) => {
-    console.log("You clicked on user: ", user.first);
+export const selectCell = (cell) => {
+    console.log("You clicked on cell: ", cell.first);
     return {
-        type: 'USER_SELECTED',
-        payload: user
+        type: 'CELL_SELECTED',
+        payload: cell
     }
 };
