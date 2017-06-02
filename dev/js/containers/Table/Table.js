@@ -1,18 +1,11 @@
 import React from 'react';
-import './Table.css';
+// import './Table.css';
 
 class Table extends React.Component {
   constructor(props) {
     super(props);
     
     this.handleClick = (e) => {
-debugger;
-      console.log('|++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++|');
-      console.log('e: ');
-      console.log(e.target);
-      console.log('|------------------------------------------------------------------------------------------------|')
-      
-      
       this.props.clickHandler(this.props.name);
     };
 

@@ -1,7 +1,10 @@
 import React from 'react';
 import UserList from '../containers/user-list';
 import UserDetails from '../containers/user-detail';
+import Table from '../containers/Table/Table';
+
 require('../../scss/style.scss');
+// require('../../scss/Table.css');
 
 const App = () => (
     <div>
