@@ -10,7 +10,7 @@ class Table extends React.Component {
       console.log('e: ');
       console.log(e.target);
       console.log('|------------------------------------------------------------------------------------------------|')
-            
+
       this.props.clickHandler(this.props.name);
     };
 
@@ -29,7 +29,16 @@ class Table extends React.Component {
 
       return data.map(function(item) {
         let cells = cols.map((col, index) =>{
-          return <td key={index} name="testname" onClick={that.handleClick}> {item[col.id]} </td>;
+          return (
+            <td
+              key     ={col.id}
+              name    ="testname"
+              onClick ={that.handleClick}
+            >
+              {item[col.id]}
+            </td>
+          );
+
         });
 
         return <tr key={item.id}> {cells} </tr>;
