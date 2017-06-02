@@ -27,13 +27,13 @@ class Table extends React.Component {
       let data = this.props.data;
       var that = this;
 
-      return data.map(function(item) {
+      return data.map(item=> {
         let cells = cols.map((col, index) =>{
           return (
             <td
               key     ={col.id}
               name    ="testname"
-              onClick ={that.handleClick}
+              onClick ={this.handleClick}
             >
               {item[col.id]}
             </td>
