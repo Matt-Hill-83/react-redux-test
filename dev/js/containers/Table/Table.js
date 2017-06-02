@@ -1,7 +1,11 @@
-import React from 'react';
+import React, {Component} from 'react';
+import {bindActionCreators} from 'redux';
+import {connect} from 'react-redux';
+import {selectUser} from '../../actions/index'
+
 // import './Table.css';
 
-class Table extends React.Component {
+class Table extends Component {
   constructor(props) {
     super(props);
     

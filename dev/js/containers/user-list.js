@@ -3,9 +3,6 @@ import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {selectUser} from '../actions/index'
 
-// import Table from './Table/Table';
-
-
 class UserList extends Component {
     renderList() {
         return this.props.users.map((user) => {
