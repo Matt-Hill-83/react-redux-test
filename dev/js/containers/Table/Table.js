@@ -6,6 +6,11 @@ class Table extends React.Component {
     super(props);
     
     this.handleClick = (e) => {
+      console.log('|++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++|');
+      console.log('e: ');
+      console.log(e.target);
+      console.log('|------------------------------------------------------------------------------------------------|')
+            
       this.props.clickHandler(this.props.name);
     };
 

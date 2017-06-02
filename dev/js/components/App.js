@@ -14,9 +14,6 @@ require('../../scss/style.scss');
   console.log('buttonName: ');
   console.log(buttonName);
   console.log('|------------------------------------------------------------------------------------------------|')
-  
-  
-  // this.setState(calculate(this.state, buttonName));
 }
 
 
@@ -33,12 +30,12 @@ let data = [
 
 const App = () => (
     <div>
-        <h2>User List</h2>
-        <UserList />
-        <hr />
-        <h2>User Details</h2>
-        <UserDetails />
-    <Table cols={cols} data={data} name="table-1" xxx-clickHandler={handleClick} />    
+	    <Table cols={cols} data={data} name="table-1" clickHandler={handleClick} />    
+      <h2>User List</h2>
+      <UserList />
+      <hr />
+      <h2>User Details</h2>
+      <UserDetails />
     </div>
 );
 
